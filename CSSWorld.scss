@@ -1,0 +1,437 @@
+/* First sass file ever!!$$!! */
+
+$pattern: url("bootstrap_example_background.png");
+  @-webkit-keyframes spin {
+  from { transform: rotateY(0); }
+  to   { transform: rotateY(-360deg); }
+}
+html {
+    cursor: default;
+    background: $pattern;
+    padding: 0px 0px 0px 0px;
+    body {
+        position: relative; top: 20px;
+        background: hsla(0, 0%, 0%, 0);
+        
+        /* Jumbotron */
+        #jumbo {
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+			margin: 20px 0px;
+			padding: 10px;
+        }
+        
+        /* Boxes */
+        .outerBox { 
+			margin: 10px 0px;
+            .innerBox {
+                border-radius: 5px;
+                background-color: rgba(255, 255, 255, 0.5);
+				min-height: 300px;
+                height: 100%; width: 100%;
+                font-size: 300%;
+				padding: 10px;
+				#title {
+            		text-align: center;
+        		}
+        		#subtitle {
+            		text-align: center;
+        		}
+            }
+        }
+        
+        /* Box 1 */
+        p.languages {
+			margin-top: 20px;
+            text-align: center;
+            font-family: "Courier New", Courier, monospace;
+            font-weight: bold;
+            .glyphicon-cog:hover {
+                transform: rotate(360deg);
+                transition: transform 1s;
+            }
+            #python {
+                color: #2DC800;
+                transition: all 0.2s ease-in;
+                text-decoration: none;
+            }
+            #python:hover {
+                color: #2DC800;
+                text-shadow: 1px 0px 20px #2DC800;
+            }
+            #ruby {
+                color: #B9264F;
+                transition: all 0.2s ease-in;
+                text-decoration: none;
+            }
+            #ruby:hover {
+                color: #B9264F;
+                text-shadow: 1px 0px 20px #B9264F;
+            }
+            #javascript {
+                color: #C8B400;
+                transition: all 0.2s ease-in;
+                text-decoration: none;
+            }
+            #javascript:hover {
+                color: #C8B400;
+                text-shadow: 1px 0px 20px #C8B400;
+            }
+            #c {
+                color: #BF00BF;
+                transition: all 0.2s ease-in;
+                text-decoration: none;
+            }
+            #c:hover {
+                color: #BF00BF;
+                text-shadow: 1px 0px 20px #BF00BF;
+            }
+            #haskell {
+                color: #0000CE;
+                transition: all 0.2s ease-in;
+                text-decoration: none;
+            }
+            #haskell:hover {
+                color: #0000CE;
+                text-shadow: 1px 0px 20px #0000CE;
+            }
+            #ml {
+                color: #FF800D;
+                transition: all 0.2s ease-in;
+                text-decoration: none;
+            }
+            #ml:hover {
+                color: #FF800D;
+                text-shadow: 1px 0px 20px #FF800D;
+            }
+            #bash {
+                color: #1F88A7;
+                transition: all 0.2s ease-in;
+                text-decoration: none;
+            }
+            #bash:hover {
+                color: #1F88A7;
+                text-shadow: 1px 0px 20px #1F88A7;
+            }
+        }
+        p:hover {
+            cursor: default;
+        }
+      
+        /* Box 2 */
+        .wrap1 {
+			margin-top: 50px;
+			min-height: 240px;
+            position: relative;
+            perspective: 800;
+            perspective-origin: 50% 100px;
+        }
+        .cube1  {
+            position: relative;
+            margin: 0 auto;
+            width: 200px;
+            transform-style: preserve-3d;
+            animation: spin 8s infinite linear;
+            transition: all 1s linear;
+            div {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background:rgba(255,255,255,0.1);
+                box-shadow:inset 0 0 30px rgba(0,0,0,0.2);
+                font-size:50px;
+                text-align:center;
+                line-height:200px;
+                color:rgba(0,0,0,0.5);
+                transition: all 1s linear;
+            }
+            .back {
+                transform: translateZ(-100px) rotateY(180deg);
+                color:hsla(58, 100%, 50%, 0.5);
+            }
+            .right {
+                transform: translateX(100px) rotateY(-270deg);
+                color:hsla(208, 100%, 50%, 0.5);
+            }
+            .left {
+                transform: translateX(-100px) rotateY(270deg);
+                color:hsla(352, 100%, 50%, 0.5);
+            }
+            .top {
+                transform: translateY(-100px) rotateX(-90deg);
+            }
+            .bottom {
+                transform: translateY(100px) rotateX(90deg);
+                
+            }
+            .front {
+                transform: translateZ(100px);
+                color:hsla(99, 100%, 50%, 0.5);
+            }
+        }
+        
+        .wrap2 {
+            height: 300px;
+            margin-top: 100px;
+            position: relative;
+            perspective: 1000;
+            perspective-origin: 50% 100px;
+        }
+        .cube2  {
+            position: relative;
+            margin: 0 auto;
+            width: 200px;
+            transform-style: preserve-3d;
+            transition: all 0.5s linear;
+            transform: rotateX(-30deg) rotateY(0deg);
+            div.face { 
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background: url("wood_pattern.png");
+                box-shadow:inset 0 0 30px rgba(0,0,0,0.3);
+                font-size:50px;
+                text-align:center;
+                line-height:200px;
+                color:rgba(0,0,0,0.5);
+                transition: all 0.5s linear;
+            }
+            div.back {
+                transform: translateZ(-100px) rotateY(180deg);
+                color:hsla(58, 100%, 50%, 0.5);
+            }
+            div.right {
+                transform: translateX(100px) rotateY(-270deg);
+                color:hsla(208, 100%, 50%, 0.5);
+            }
+            div.left {
+                transform: translateX(-100px) rotateY(270deg);
+                color:hsla(352, 100%, 50%, 0.5);
+            }
+            div.top {
+                transform: translateY(-100px) rotateX(90deg);
+            }
+            div.bottom {
+                transform: translateY(100px) rotateX(-90deg);
+            }
+            div.front {
+                transform: translateZ(100px);
+                color:hsla(99, 100%, 50%, 0.5);
+            }
+            div.monster {
+                position: absolute;
+                transition: all 0.5s linear;
+                width: 134px;
+                height: 120px;
+                background: url("lilMonster1.png");
+                background-position: center;
+                transform: translateX(33px) rotateX(0deg);
+            }
+        }
+        .cube2:hover {
+            .top {
+            transform: translateY(-200px) translateZ(-100px) rotateX(180deg);
+            transform-origin: center;
+            }
+            .monster {
+                transform: translateY(-50px) translateX(33px) rotateX(0deg);
+            }
+        }
+		
+		.button1 {
+   			border-top: 0px solid #96d1f8;
+			border-bottom: 3px solid hsl(224, 95%, 20%);
+			border-left: 0px solid yellow;
+			border-right: 0px solid green;
+   			background: linear-gradient(to bottom, hsl(224, 95%, 50%), hsl(224, 95%, 30%));
+   			padding: 16.5px 33px;
+   			border-radius: 8px;
+   			box-shadow: hsla(0,0, 50%,.4) 2px 5px 10px;
+   			text-shadow: hsla(0,0,0,.4) 0 1px 0;
+   			color: hsl(0, 0%, 90%);
+   			font-size: 21px;
+   			font-family: Georgia, serif;
+   			text-decoration: none;
+   			vertical-align: middle;
+   		}
+		.button1:hover {
+			background: linear-gradient(to bottom, hsl(224, 95%, 30%), hsl(224, 95%, 30%));
+			border-bottom: 3px solid hsl(224, 95%, 30%);
+			box-shadow: inset hsla(0,0, 50%,.4) 2px 2px 5px;
+   			color: #ccc;
+   		}
+		.button1:active {
+   			border-top-color: #1b435e;
+   			background: #1b435e;
+   		}
+        .button2 {
+   			border-top: 0px solid #96d1f8;
+			border-bottom: 3px solid hsl(106, 85%, 20%);
+			border-left: 0px solid yellow;
+			border-right: 0px solid green;
+   			background: linear-gradient(to bottom, hsl(106, 85%, 50%), hsl(106, 85%, 30%));
+   			padding: 16.5px 33px;
+   			border-radius: 8px;
+   			box-shadow: hsla(0,0, 50%,.4) 2px 5px 10px;
+   			text-shadow: hsla(0,0,0,.4) 0 1px 0;
+   			color: hsl(0, 0%, 90%);
+   			font-size: 21px;
+   			font-family: Georgia, serif;
+   			text-decoration: none;
+   			vertical-align: middle;
+   		}
+		.button2:hover {
+			background: linear-gradient(to bottom, hsl(106, 85%, 30%), hsl(106, 85%, 30%));
+			border-bottom: 3px solid hsl(106, 85%, 30%);
+			box-shadow: inset hsla(0,0, 50%,.4) 2px 2px 5px;
+   			color: #ccc;
+   		}
+		.button2:active {
+   			border-top-color: #1b435e;
+   			background: #1b435e;
+   		}
+		.button3 {
+   			border-top: 0px solid #96d1f8;
+			border-bottom: 3px solid hsl(355, 85%, 20%);
+			border-left: 0px solid yellow;
+			border-right: 0px solid green;
+   			background: linear-gradient(to bottom, hsl(355, 85%, 50%) 0%, hsl(355, 85%, 40%) 50%, hsl(355, 85%, 30%) 100%);
+   			padding: 16.5px 33px;
+   			border-radius: 8px;
+   			box-shadow: hsla(0,0, 50%,.4) 2px 5px 10px;
+   			text-shadow: hsla(0,0,0,.4) 0 1px 0;
+   			color: hsl(0, 0%, 90%);
+   			font-size: 21px;
+   			font-family: Georgia, serif;
+   			text-decoration: none;
+   			vertical-align: middle;
+   		}
+		.button3:hover {
+			background: linear-gradient(to bottom, hsl(355, 85%, 30%), hsl(355, 85%, 30%));
+			border-bottom: 3px solid hsl(355, 85%, 30%);
+			box-shadow: inset hsla(0,0, 50%,.4) 2px 2px 5px;
+   			color: #ccc;
+   		}
+		.button3:active {
+   			border-top-color: #1b435e;
+   			background: #1b435e;
+   		}
+		.button4 {
+   			border-top: 0px solid #96d1f8;
+			border-bottom: 2px solid hsl(67, 85%, 20%);
+			border-left: 0px solid yellow;
+			border-right: 0px solid green;
+   			background: linear-gradient(to bottom, hsl(67, 85%, 50%) 0%, hsl(67, 85%, 50%) 10%, hsl(67, 85%, 30%) 100%);
+   			padding: 6.5px 13px;
+   			border-radius: 3px;
+   			box-shadow: hsla(0,0, 50%,.4) qpx 3px 5px;
+   			color: hsl(0, 100%, 1%);
+   			font-size: 16px;
+   			font-family: Courier, monospace;
+   			text-decoration: none;
+   			vertical-align: middle;
+   		}
+		.button4:hover {
+			background: linear-gradient(to bottom, hsl(67, 85%, 30%), hsl(67, 85%, 30%));
+			border-bottom: 2px solid hsl(67, 85%, 30%);
+			box-shadow: inset hsla(0,0, 50%,.4) 2px 2px 5px;
+   			color: hsl(0, 100%, 1%);
+   		}
+		.button4:active {
+   			border-top-color: #1b435e;
+   			background: #1b435e;
+   		}
+		.button5 {
+   			border-top: 0px solid #96d1f8;
+			border-bottom: 2px solid hsl(67, 85%, 20%);
+			border-left: 0px solid yellow;
+			border-right: 0px solid green;
+   			background: linear-gradient(to bottom, hsl(67, 85%, 50%) 0%, hsl(67, 85%, 50%) 10%, hsl(67, 85%, 30%) 100%);
+   			padding: 3px 15px;
+   			border-radius: 20px;
+   			box-shadow: hsla(0,0, 50%,.4) qpx 3px 5px;
+   			color: hsl(0, 100%, 1%);
+   			font-size: 16px;
+   			font-family: Courier, monospace;
+   			text-decoration: none;
+   			vertical-align: middle;
+   		}
+		.button5:hover {
+			background: linear-gradient(to bottom, hsl(67, 85%, 30%), hsl(67, 85%, 30%));
+			border-bottom: 2px solid hsl(67, 85%, 30%);
+			box-shadow: inset hsla(0,0, 50%,.4) 2px 2px 5px;
+   			color: hsl(0, 100%, 1%);
+   		}
+		.button5:active {
+   			border-top-color: #1b435e;
+   			background: #1b435e;
+   		}
+		.button6 {
+   			border-top: 2px solid hsl(67, 95%, 50%);
+			border-bottom: 2px solid hsl(67, 85%, 20%);
+			border-left: 2px solid hsl(67, 95%, 40%);
+			border-right: 2px solid hsl(67, 75%, 30%);
+   			background: linear-gradient(to bottom, hsl(67, 85%, 50%) 0%, hsl(67, 85%, 50%) 10%, hsl(67, 85%, 30%) 100%);
+   			padding: 3px 15px;
+   			border-radius: 2px;
+   			box-shadow: hsla(0,0, 50%,.4) qpx 3px 5px;
+   			color: hsl(0, 100%, 1%);
+   			font-size: 16px;
+   			font-family: Courier, monospace;
+   			text-decoration: none;
+   			vertical-align: middle;
+   		}
+		.button6:hover {
+			background: linear-gradient(to bottom, hsl(67, 85%, 30%), hsl(67, 85%, 30%));
+			border-top: 2px solid hsl(67, 85%, 20%);
+			border-bottom: 2px solid hsl(67, 85%, 35%);
+			border-left: 2px solid hsl(67, 85%, 20%);
+			border-right: 2px solid hsl(67, 85%, 35%);
+			box-shadow: inset hsla(0,0, 50%,.4) 2px 2px 5px;
+   			color: hsl(0, 100%, 1%);
+   		}
+		.button6:active {
+   			border-top-color: #1b435e;
+   			background: #1b435e;
+   		}
+		.button7 {
+   			border-top: 2px solid hsl(67, 95%, 50%);
+			border-bottom: 2px solid hsl(67, 85%, 20%);
+			border-left: 2px solid hsl(67, 95%, 40%);
+			border-right: 2px solid hsl(67, 75%, 30%);
+   			background: linear-gradient(to bottom, hsl(67, 85%, 50%) 0%, hsl(67, 85%, 50%) 10%, hsl(67, 85%, 30%) 100%);
+   			padding: 3px 15px;
+   			border-radius: 10px;
+   			box-shadow: hsla(0,0, 50%,.4) qpx 3px 5px;
+   			color: hsl(0, 100%, 1%);
+   			font-size: 16px;
+   			font-family: Courier, monospace;
+   			text-decoration: none;
+   			vertical-align: middle;
+   		}
+		.button7:hover {
+			background: linear-gradient(to bottom, hsl(67, 85%, 30%), hsl(67, 85%, 30%));
+			border-top: 2px solid hsl(67, 85%, 20%);
+			border-bottom: 2px solid hsl(67, 85%, 35%);
+			border-left: 2px solid hsl(67, 85%, 20%);
+			border-right: 2px solid hsl(67, 85%, 35%);
+			box-shadow: inset hsla(0,0, 50%,.4) 2px 2px 5px;
+   			color: hsl(0, 100%, 1%);
+   		}
+		.button7:active {
+   			border-top-color: #1b435e;
+   			background: #1b435e;
+   		}
+		.buttonContainer1 {
+			margin-top: 40px;
+			position: relative;
+			text-align: center;
+		}
+		.buttonContainer2 {
+			position: relative;
+			text-align: center;
+		}
+		
+    }
+}

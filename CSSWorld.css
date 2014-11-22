@@ -1,0 +1,418 @@
+/* First sass file ever!!$$!! */
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0); }
+
+  to {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg); } }
+
+html {
+  cursor: default;
+  background: url("bootstrap_example_background.png");
+  padding: 0px 0px 0px 0px; }
+  html body {
+    position: relative;
+    top: 20px;
+    background: rgba(0, 0, 0, 0);
+    /* Jumbotron */
+    /* Boxes */
+    /* Box 1 */
+    /* Box 2 */ }
+    html body #jumbo {
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.5);
+      text-align: center;
+      margin: 20px 0px;
+      padding: 10px; }
+    html body .outerBox {
+      margin: 10px 0px; }
+      html body .outerBox .innerBox {
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.5);
+        min-height: 300px;
+        height: 100%;
+        width: 100%;
+        font-size: 300%;
+        padding: 10px; }
+        html body .outerBox .innerBox #title {
+          text-align: center; }
+        html body .outerBox .innerBox #subtitle {
+          text-align: center; }
+    html body p.languages {
+      margin-top: 20px;
+      text-align: center;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: bold; }
+      html body p.languages .glyphicon-cog:hover {
+        -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+        -webkit-transition: -webkit-transform 1s;
+                transition: transform 1s; }
+      html body p.languages #python {
+        color: #2DC800;
+        -webkit-transition: all 0.2s ease-in;
+                transition: all 0.2s ease-in;
+        text-decoration: none; }
+      html body p.languages #python:hover {
+        color: #2DC800;
+        text-shadow: 1px 0px 20px #2DC800; }
+      html body p.languages #ruby {
+        color: #B9264F;
+        -webkit-transition: all 0.2s ease-in;
+                transition: all 0.2s ease-in;
+        text-decoration: none; }
+      html body p.languages #ruby:hover {
+        color: #B9264F;
+        text-shadow: 1px 0px 20px #B9264F; }
+      html body p.languages #javascript {
+        color: #C8B400;
+        -webkit-transition: all 0.2s ease-in;
+                transition: all 0.2s ease-in;
+        text-decoration: none; }
+      html body p.languages #javascript:hover {
+        color: #C8B400;
+        text-shadow: 1px 0px 20px #C8B400; }
+      html body p.languages #c {
+        color: #BF00BF;
+        -webkit-transition: all 0.2s ease-in;
+                transition: all 0.2s ease-in;
+        text-decoration: none; }
+      html body p.languages #c:hover {
+        color: #BF00BF;
+        text-shadow: 1px 0px 20px #BF00BF; }
+      html body p.languages #haskell {
+        color: #0000CE;
+        -webkit-transition: all 0.2s ease-in;
+                transition: all 0.2s ease-in;
+        text-decoration: none; }
+      html body p.languages #haskell:hover {
+        color: #0000CE;
+        text-shadow: 1px 0px 20px #0000CE; }
+      html body p.languages #ml {
+        color: #FF800D;
+        -webkit-transition: all 0.2s ease-in;
+                transition: all 0.2s ease-in;
+        text-decoration: none; }
+      html body p.languages #ml:hover {
+        color: #FF800D;
+        text-shadow: 1px 0px 20px #FF800D; }
+      html body p.languages #bash {
+        color: #1F88A7;
+        -webkit-transition: all 0.2s ease-in;
+                transition: all 0.2s ease-in;
+        text-decoration: none; }
+      html body p.languages #bash:hover {
+        color: #1F88A7;
+        text-shadow: 1px 0px 20px #1F88A7; }
+    html body p:hover {
+      cursor: default; }
+    html body .wrap1 {
+      margin-top: 50px;
+      min-height: 240px;
+      position: relative;
+      -webkit-perspective: 800;
+              perspective: 800;
+      -webkit-perspective-origin: 50% 100px;
+              perspective-origin: 50% 100px; }
+    html body .cube1 {
+      position: relative;
+      margin: 0 auto;
+      width: 200px;
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+      -webkit-animation: spin 8s infinite linear;
+              animation: spin 8s infinite linear;
+      -webkit-transition: all 1s linear;
+              transition: all 1s linear; }
+      html body .cube1 div {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.2);
+        font-size: 50px;
+        text-align: center;
+        line-height: 200px;
+        color: rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 1s linear;
+                transition: all 1s linear; }
+      html body .cube1 .back {
+        -webkit-transform: translateZ(-100px) rotateY(180deg);
+                transform: translateZ(-100px) rotateY(180deg);
+        color: rgba(255, 247, 0, 0.5); }
+      html body .cube1 .right {
+        -webkit-transform: translateX(100px) rotateY(-270deg);
+                transform: translateX(100px) rotateY(-270deg);
+        color: rgba(0, 136, 255, 0.5); }
+      html body .cube1 .left {
+        -webkit-transform: translateX(-100px) rotateY(270deg);
+                transform: translateX(-100px) rotateY(270deg);
+        color: rgba(255, 0, 34, 0.5); }
+      html body .cube1 .top {
+        -webkit-transform: translateY(-100px) rotateX(-90deg);
+                transform: translateY(-100px) rotateX(-90deg); }
+      html body .cube1 .bottom {
+        -webkit-transform: translateY(100px) rotateX(90deg);
+                transform: translateY(100px) rotateX(90deg); }
+      html body .cube1 .front {
+        -webkit-transform: translateZ(100px);
+                transform: translateZ(100px);
+        color: rgba(89, 255, 0, 0.5); }
+    html body .wrap2 {
+      height: 300px;
+      margin-top: 100px;
+      position: relative;
+      -webkit-perspective: 1000;
+              perspective: 1000;
+      -webkit-perspective-origin: 50% 100px;
+              perspective-origin: 50% 100px; }
+    html body .cube2 {
+      position: relative;
+      margin: 0 auto;
+      width: 200px;
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+      -webkit-transition: all 0.5s linear;
+              transition: all 0.5s linear;
+      -webkit-transform: rotateX(-30deg) rotateY(0deg);
+              transform: rotateX(-30deg) rotateY(0deg); }
+      html body .cube2 div.face {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background: url("wood_pattern.png");
+        box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
+        font-size: 50px;
+        text-align: center;
+        line-height: 200px;
+        color: rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.5s linear;
+                transition: all 0.5s linear; }
+      html body .cube2 div.back {
+        -webkit-transform: translateZ(-100px) rotateY(180deg);
+                transform: translateZ(-100px) rotateY(180deg);
+        color: rgba(255, 247, 0, 0.5); }
+      html body .cube2 div.right {
+        -webkit-transform: translateX(100px) rotateY(-270deg);
+                transform: translateX(100px) rotateY(-270deg);
+        color: rgba(0, 136, 255, 0.5); }
+      html body .cube2 div.left {
+        -webkit-transform: translateX(-100px) rotateY(270deg);
+                transform: translateX(-100px) rotateY(270deg);
+        color: rgba(255, 0, 34, 0.5); }
+      html body .cube2 div.top {
+        -webkit-transform: translateY(-100px) rotateX(90deg);
+                transform: translateY(-100px) rotateX(90deg); }
+      html body .cube2 div.bottom {
+        -webkit-transform: translateY(100px) rotateX(-90deg);
+                transform: translateY(100px) rotateX(-90deg); }
+      html body .cube2 div.front {
+        -webkit-transform: translateZ(100px);
+                transform: translateZ(100px);
+        color: rgba(89, 255, 0, 0.5); }
+      html body .cube2 div.monster {
+        position: absolute;
+        -webkit-transition: all 0.5s linear;
+                transition: all 0.5s linear;
+        width: 134px;
+        height: 120px;
+        background: url("lilMonster1.png");
+        background-position: center;
+        -webkit-transform: translateX(33px) rotateX(0deg);
+                transform: translateX(33px) rotateX(0deg); }
+    html body .cube2:hover .top {
+      -webkit-transform: translateY(-200px) translateZ(-100px) rotateX(180deg);
+              transform: translateY(-200px) translateZ(-100px) rotateX(180deg);
+      -webkit-transform-origin: center;
+          -ms-transform-origin: center;
+              transform-origin: center; }
+    html body .cube2:hover .monster {
+      -webkit-transform: translateY(-50px) translateX(33px) rotateX(0deg);
+              transform: translateY(-50px) translateX(33px) rotateX(0deg); }
+    html body .button1 {
+      border-top: 0px solid #96d1f8;
+      border-bottom: 3px solid #031c63;
+      border-left: 0px solid yellow;
+      border-right: 0px solid green;
+      background: -webkit-linear-gradient(top, #0647f9, #042b95);
+      background: linear-gradient(to bottom, #0647f9, #042b95);
+      padding: 16.5px 33px;
+      border-radius: 8px;
+      box-shadow: rgba(128, 128, 128, 0.4) 2px 5px 10px;
+      text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+      color: #e6e6e6;
+      font-size: 21px;
+      font-family: Georgia, serif;
+      text-decoration: none;
+      vertical-align: middle; }
+    html body .button1:hover {
+      background: -webkit-linear-gradient(top, #042b95, #042b95);
+      background: linear-gradient(to bottom, #042b95, #042b95);
+      border-bottom: 3px solid #042b95;
+      box-shadow: inset rgba(128, 128, 128, 0.4) 2px 2px 5px;
+      color: #ccc; }
+    html body .button1:active {
+      border-top-color: #1b435e;
+      background: #1b435e; }
+    html body .button2 {
+      border-top: 0px solid #96d1f8;
+      border-bottom: 3px solid #1c5e08;
+      border-left: 0px solid yellow;
+      border-right: 0px solid green;
+      background: -webkit-linear-gradient(top, #46ec13, #2a8e0b);
+      background: linear-gradient(to bottom, #46ec13, #2a8e0b);
+      padding: 16.5px 33px;
+      border-radius: 8px;
+      box-shadow: rgba(128, 128, 128, 0.4) 2px 5px 10px;
+      text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+      color: #e6e6e6;
+      font-size: 21px;
+      font-family: Georgia, serif;
+      text-decoration: none;
+      vertical-align: middle; }
+    html body .button2:hover {
+      background: -webkit-linear-gradient(top, #2a8e0b, #2a8e0b);
+      background: linear-gradient(to bottom, #2a8e0b, #2a8e0b);
+      border-bottom: 3px solid #2a8e0b;
+      box-shadow: inset rgba(128, 128, 128, 0.4) 2px 2px 5px;
+      color: #ccc; }
+    html body .button2:active {
+      border-top-color: #1b435e;
+      background: #1b435e; }
+    html body .button3 {
+      border-top: 0px solid #96d1f8;
+      border-bottom: 3px solid #5e080f;
+      border-left: 0px solid yellow;
+      border-right: 0px solid green;
+      background: -webkit-linear-gradient(top, #ec1325 0%, #bd0f1e 50%, #8e0b16 100%);
+      background: linear-gradient(to bottom, #ec1325 0%, #bd0f1e 50%, #8e0b16 100%);
+      padding: 16.5px 33px;
+      border-radius: 8px;
+      box-shadow: rgba(128, 128, 128, 0.4) 2px 5px 10px;
+      text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+      color: #e6e6e6;
+      font-size: 21px;
+      font-family: Georgia, serif;
+      text-decoration: none;
+      vertical-align: middle; }
+    html body .button3:hover {
+      background: -webkit-linear-gradient(top, #8e0b16, #8e0b16);
+      background: linear-gradient(to bottom, #8e0b16, #8e0b16);
+      border-bottom: 3px solid #8e0b16;
+      box-shadow: inset rgba(128, 128, 128, 0.4) 2px 2px 5px;
+      color: #ccc; }
+    html body .button3:active {
+      border-top-color: #1b435e;
+      background: #1b435e; }
+    html body .button4 {
+      border-top: 0px solid #96d1f8;
+      border-bottom: 2px solid #545e08;
+      border-left: 0px solid yellow;
+      border-right: 0px solid green;
+      background: -webkit-linear-gradient(top, #d3ec13 0%, #d3ec13 10%, #7e8e0b 100%);
+      background: linear-gradient(to bottom, #d3ec13 0%, #d3ec13 10%, #7e8e0b 100%);
+      padding: 6.5px 13px;
+      border-radius: 3px;
+      box-shadow: rgba(128, 128, 128, 0.4) qpx 3px 5px;
+      color: #050000;
+      font-size: 16px;
+      font-family: Courier, monospace;
+      text-decoration: none;
+      vertical-align: middle; }
+    html body .button4:hover {
+      background: -webkit-linear-gradient(top, #7e8e0b, #7e8e0b);
+      background: linear-gradient(to bottom, #7e8e0b, #7e8e0b);
+      border-bottom: 2px solid #7e8e0b;
+      box-shadow: inset rgba(128, 128, 128, 0.4) 2px 2px 5px;
+      color: #050000; }
+    html body .button4:active {
+      border-top-color: #1b435e;
+      background: #1b435e; }
+    html body .button5 {
+      border-top: 0px solid #96d1f8;
+      border-bottom: 2px solid #545e08;
+      border-left: 0px solid yellow;
+      border-right: 0px solid green;
+      background: -webkit-linear-gradient(top, #d3ec13 0%, #d3ec13 10%, #7e8e0b 100%);
+      background: linear-gradient(to bottom, #d3ec13 0%, #d3ec13 10%, #7e8e0b 100%);
+      padding: 3px 15px;
+      border-radius: 20px;
+      box-shadow: rgba(128, 128, 128, 0.4) qpx 3px 5px;
+      color: #050000;
+      font-size: 16px;
+      font-family: Courier, monospace;
+      text-decoration: none;
+      vertical-align: middle; }
+    html body .button5:hover {
+      background: -webkit-linear-gradient(top, #7e8e0b, #7e8e0b);
+      background: linear-gradient(to bottom, #7e8e0b, #7e8e0b);
+      border-bottom: 2px solid #7e8e0b;
+      box-shadow: inset rgba(128, 128, 128, 0.4) 2px 2px 5px;
+      color: #050000; }
+    html body .button5:active {
+      border-top-color: #1b435e;
+      background: #1b435e; }
+    html body .button6 {
+      border-top: 2px solid #dcf906;
+      border-bottom: 2px solid #545e08;
+      border-left: 2px solid #b0c705;
+      border-right: 2px solid #788613;
+      background: -webkit-linear-gradient(top, #d3ec13 0%, #d3ec13 10%, #7e8e0b 100%);
+      background: linear-gradient(to bottom, #d3ec13 0%, #d3ec13 10%, #7e8e0b 100%);
+      padding: 3px 15px;
+      border-radius: 2px;
+      box-shadow: rgba(128, 128, 128, 0.4) qpx 3px 5px;
+      color: #050000;
+      font-size: 16px;
+      font-family: Courier, monospace;
+      text-decoration: none;
+      vertical-align: middle; }
+    html body .button6:hover {
+      background: -webkit-linear-gradient(top, #7e8e0b, #7e8e0b);
+      background: linear-gradient(to bottom, #7e8e0b, #7e8e0b);
+      border-top: 2px solid #545e08;
+      border-bottom: 2px solid #93a50d;
+      border-left: 2px solid #545e08;
+      border-right: 2px solid #93a50d;
+      box-shadow: inset rgba(128, 128, 128, 0.4) 2px 2px 5px;
+      color: #050000; }
+    html body .button6:active {
+      border-top-color: #1b435e;
+      background: #1b435e; }
+    html body .button7 {
+      border-top: 2px solid #dcf906;
+      border-bottom: 2px solid #545e08;
+      border-left: 2px solid #b0c705;
+      border-right: 2px solid #788613;
+      background: -webkit-linear-gradient(top, #d3ec13 0%, #d3ec13 10%, #7e8e0b 100%);
+      background: linear-gradient(to bottom, #d3ec13 0%, #d3ec13 10%, #7e8e0b 100%);
+      padding: 3px 15px;
+      border-radius: 10px;
+      box-shadow: rgba(128, 128, 128, 0.4) qpx 3px 5px;
+      color: #050000;
+      font-size: 16px;
+      font-family: Courier, monospace;
+      text-decoration: none;
+      vertical-align: middle; }
+    html body .button7:hover {
+      background: -webkit-linear-gradient(top, #7e8e0b, #7e8e0b);
+      background: linear-gradient(to bottom, #7e8e0b, #7e8e0b);
+      border-top: 2px solid #545e08;
+      border-bottom: 2px solid #93a50d;
+      border-left: 2px solid #545e08;
+      border-right: 2px solid #93a50d;
+      box-shadow: inset rgba(128, 128, 128, 0.4) 2px 2px 5px;
+      color: #050000; }
+    html body .button7:active {
+      border-top-color: #1b435e;
+      background: #1b435e; }
+    html body .buttonContainer1 {
+      margin-top: 40px;
+      position: relative;
+      text-align: center; }
+    html body .buttonContainer2 {
+      position: relative;
+      text-align: center; }
