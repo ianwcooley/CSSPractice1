@@ -1,7 +1,7 @@
 /* First sass file ever!!$$!! */
 
 $pattern: url("bootstrap_example_background.png");
-  @-webkit-keyframes spin {
+  @keyframes spin {
   from { transform: rotateY(0); }
   to   { transform: rotateY(-360deg); }
 }
